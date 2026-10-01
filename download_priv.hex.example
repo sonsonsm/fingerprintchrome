@@ -1,0 +1,4 @@
+# Copy to download_priv.hex (64 hex chars). Release-signing only — not the seat key.
+# Seat mint priv lives in .issuer/license_priv.hex (see license_priv.hex.example).
+# Customers only replace FINGERPRINTCHROME_LICENSE_KEY (see license.key.example).
+0000000000000000000000000000000000000000000000000000000000000000
