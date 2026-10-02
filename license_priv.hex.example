@@ -1,0 +1,8 @@
+# Issuer only — do NOT commit the real file.
+# Copy to .issuer/license_priv.hex (64 hex chars) on the machine that mints multi-seat keys:
+#   mkdir -p .issuer
+#   cp license_priv.hex.example .issuer/license_priv.hex   # then paste real priv
+#   python3 scripts/mint-license.py --seats 5
+#
+# Customers never need this. Default DEMO-KEY = 1 seat without any priv.
+0000000000000000000000000000000000000000000000000000000000000000

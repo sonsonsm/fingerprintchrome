@@ -1,0 +1,37 @@
+# User-paid seat key (never commit customer keys)
+license.key
+.env
+.env.*
+!.env.example
+!license.key.example
+
+# Issuer-only: seat-mint private key (multi-seat). Keep under .issuer/ locally.
+license_priv.hex
+.issuer/
+
+# Release-signing private key only (not needed to run DEMO 1-seat)
+download_priv.hex
+
+# Binary archives — local cache only; publish via GitHub Releases
+archives/*
+!archives/.gitkeep
+!archives/README.md
+
+# Accidental root drops (never commit)
+/*.tar.gz
+/*.zip
+/SHA256SUMS
+/SHA256SUMS.sig
+
+# Runtime
+*.log
+profile/
+cache/
+cache_win/
+__pycache__/
+*.png
+.DS_Store
+
+# Node
+pkg/node_modules/
+node_modules/
